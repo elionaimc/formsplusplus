@@ -1,0 +1,7 @@
+{
+  "name": "formsplusplus",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
