@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">List of fields</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="container">
+    @for(field of fieldsSignal(); track field; let idx = $index) {
+      <div [innerHTML]="field.sanitized_label"></div>
+    }
+  </div>
+</ion-content>
